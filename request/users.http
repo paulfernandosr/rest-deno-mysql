@@ -1,0 +1,28 @@
+
+### Obtaining users
+GET http://localhost:8000/users
+
+### Obtaining a single user
+GET http://localhost:8000/users/3
+
+### Creating users
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{
+    "name": "John",
+    "country": "London"
+}
+
+### Deleting a user
+DELETE http://localhost:8000/users/1
+
+### Updating a user
+PUT http://localhost:8000/users/3
+Content-Type: application/json
+
+{
+    "name": "Gordon Clark",
+    "country": "Russia"
+}
+
